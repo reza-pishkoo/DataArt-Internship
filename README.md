@@ -1,0 +1,1 @@
+Hi. I am Reza Pishko. In 1397, I won a bronze medal in the Mathematical Olympiad. I am currently a student of Computer Science at Sharif University of Technology and my interest is in machine learning topics. and that's al :)
