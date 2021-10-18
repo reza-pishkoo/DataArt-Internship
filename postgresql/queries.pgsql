@@ -41,8 +41,8 @@ END; $$
 LANGUAGE 'plpgsql';
 
 -- query8
-SELECT customer_firstname as "Customer Name", customer_lastname as "Customer Lastname", product_name as "Product Name", total as "Total Cost" FROM
-    (SELECT customer.firstname as customer_firstname, customer.lastname as customer_lastname, product.name as product_name, order_product.quantity * order_product.priceeach AS total FROM order_product
+SELECT firstname, lastname, name, total FROM
+    (SELECT customer.firstname, customer.lastname, product.name, order_product.quantity * order_product.priceeach AS total FROM order_product
     INNER JOIN "Order" ON "Order".id = order_product.orderid
     INNER JOIN customer ON customer.Id = "Order".customerid
     INNER JOIN product ON order_product.productcode = product.ID) as total_order
