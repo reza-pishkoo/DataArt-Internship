@@ -1,3 +1,6 @@
+-- query1
+-- the tables file
+
 -- query2
 ALTER TABLE customer COLUMN postalcode;
 
