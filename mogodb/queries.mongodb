@@ -1,4 +1,5 @@
 
 use('data-art-mongodb');
-
-db.Customer.find( {"City": "data-city"} )
+//query1
+db.Customer.find( {"City": "tehran"} )
+//query2
