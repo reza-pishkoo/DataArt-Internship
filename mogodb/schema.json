@@ -51,7 +51,18 @@
       "PaymentDate": "2011-07-18T16:00:00Z",
       "Amount": 100000
     }
+  ],
+  "customer-orders": [
+    {
+      "OrderID": "617d76581f60bca5392f51b1",
+      "CustomerID": "1234abcd4321dcba",
+      "OrderDate": "2010-11-18T16:00:00Z",
+      "ShippedDate": "2010-11-18T16:00:00Z",
+      "Status": 1,
+      "Comments": "comment1"
+    }
   ]
+
 }
 
 //order
