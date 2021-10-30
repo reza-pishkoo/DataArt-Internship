@@ -1,5 +1,10 @@
 
 use('data-art-mongodb');
+
 //query1
 db.Customer.find( {"City": "tehran"} )
+
 //query2
+db.Customer.find({ $or: [{"Address1": {"$regex": ".*azadi*."} }, {"Address2": {"$regex": ".*azadi*."} }]})
+
+//query3
