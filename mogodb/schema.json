@@ -1,0 +1,75 @@
+//product
+{
+  "_id": {
+    "$oid": "617d76571f60bca5392f51af"
+  },
+  "ProductlineID": 1,
+  "Name": "data-art-product",
+  "Scale": 2,
+  "vendor": "vendor1",
+  "PdtDescription": "product-description",
+  "QtylnStock": 10,
+  "BuyPrice": 100000,
+  "MSRP": "MSRP1",
+  "order-product": [
+    {
+      "OrderID": "617d76581f60bca5392f51b1",
+      "productCode": "617d76571f60bca5392f51af",
+      "Quantity": 2,
+      "PriceEach": 100000
+    }
+  ]
+}
+
+//customer
+{
+  "_id": {
+    "$oid": "617d76581f60bca5392f51b0"
+  },
+  "salesRepEmployeeNum": 2,
+  "Name": "data-art",
+  "Lastname": "data",
+  "Firstname": "art",
+  "Phone": "7733",
+  "Address1": "address1",
+  "Address2": "address2",
+  "City": "data-city",
+  "State": "state1",
+  "PostalCode": 1111,
+  "Country": "iran",
+  "CreditLimit": 100,
+  "Peyments": [
+    {
+      "CustomerID": "1234abcd4321dcba",
+      "CheckNum": "222cba22",
+      "PaymentDate": "2010-11-18T16:00:00Z",
+      "Amount": 100000
+    },
+    {
+      "CustomerID": "1234abcd4321dcba",
+      "CheckNum": "111abc11",
+      "PaymentDate": "2011-07-18T16:00:00Z",
+      "Amount": 100000
+    }
+  ]
+}
+
+//order
+{
+  "_id": {
+    "$oid": "617d76581f60bca5392f51b1"
+  },
+  "CustomerID": "1234abcd4321dcba",
+  "OrderDate": "2010-11-18T16:00:00Z",
+  "ShippedDate": "2010-11-18T16:00:00Z",
+  "Status": 1,
+  "Comments": "comment1",
+  "Products-ordered": [
+    {
+      "OrderID": "617d76581f60bca5392f51b1",
+      "productCode": "617d76571f60bca5392f51af",
+      "Quantity": 2,
+      "PriceEach": 100000
+    }
+  ]
+}
