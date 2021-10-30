@@ -8,3 +8,4 @@ db.Customer.find( {"City": "tehran"} )
 db.Customer.find({ $or: [{"Address1": {"$regex": ".*azadi*."} }, {"Address2": {"$regex": ".*azadi*."} }]}, {_id: 0, Lastname: 1})
 
 //query3
+db.Customer.find({"customer-orders.OrderID": "123"}, {Firstname: 1})
